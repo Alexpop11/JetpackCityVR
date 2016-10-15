@@ -8,6 +8,8 @@ public class WandController : MonoBehaviour
     public bool gripButtonUp = false;
     public bool gripButtonPressed = false;
     public float thrust = 4;
+    public AudioClip impact;
+    AudioSource audio;
 
     private Valve.VR.EVRButtonId triggerButton = Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger;
     public bool triggerButtonDown = false;
@@ -43,6 +45,7 @@ public class WandController : MonoBehaviour
                 if (gripButtonDown)
         {
             Debug.Log("Grip Button was just pressed");
+
                     }
                 if (gripButtonUp)
         {
